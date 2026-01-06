@@ -1,5 +1,5 @@
 # =========================
-# Roblox / Script Hub
+# Roblox Script Hub
 # =========================
 
 # Arquivos temporários
@@ -12,22 +12,16 @@ config.json
 settings.json
 *.env
 
-# Pastas de cache
+# Cache / lixo
 .cache/
 temp/
 tmp/
 
-# IDEs / Editores
+# Editores
 .vscode/
 .idea/
 *.swp
 
-# Sistema operacional
+# Sistema
 .DS_Store
 Thumbs.db
-
-# =========================
-# NÃO IGNORAR
-# =========================
-# main.lua
-# README.md
