@@ -1,65 +1,28 @@
-```lua
--- Darkz Hub - Blox Fruits 2026
--- Complete AIO Script with All Features
--- GUI + Auto Farm + ESP + Teleport + Combat + More
--- Inspired by W-azure, Redz Hub, Astral Hub, Banana Hub
-
---=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
--- [INITIALIZATION]
---=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-
--- Services
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local Workspace = game:GetService("Workspace")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local CoreGui = game:GetService("CoreGui")
-local TweenService = game:GetService("TweenService")
-local UserInputService = game:GetService("UserInputService")
-local TeleportService = game:GetService("TeleportService")
-local Lighting = game:GetService("Lighting")
-local VirtualUser = game:GetService("VirtualUser")
-local HttpService = game:GetService("HttpService")
-local VirtualInputManager = game:GetService("VirtualInputManager")
-
--- Player
-local Player = Players.LocalPlayer
-local Mouse = Player:GetMouse()
-
--- Cleanup old GUI
-for _, gui in pairs(CoreGui:GetChildren()) do
-    if gui.Name == "DarkzHub" then
-        gui:Destroy()
-    end
+if not game:IsLoaded() then
+    game.Loaded:Wait()
 end
 
---=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
--- [CORE MODULE - Universal Functions]
---=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
 
-local Core = {
-    Connections = {},
-    ESPObjects = {},
-    Settings = {
-        -- Auto Farm
-        AutoLevel = false,
-        SelectedLevelMethod = "Normal",
-        AutoBoss = false,
-        SelectedBoss = "",
-        AutoKaitun = false,
-        AutoMaterial = false,
-        AutoRaid = false,
-        RaidChip = "Flame",
-        AutoElite = false,
-        AutoSeaEvent = false,
-        SeaEventType = "Leviathan",
-        
-        -- Quest System
-        AutoYama = false,
-        AutoTushita = false,
-        AutoCDK = false,
-        AutoGodHuman = false,
-        AutoSoulGuitar = false,
+local Window = Rayfield:CreateWindow({
+    Name = "Darkz Hub | Test",
+    LoadingTitle = "Darkz Hub",
+    LoadingSubtitle = "UI Test",
+    ConfigurationSaving = {Enabled = false}
+})
+
+local Tab = Window:CreateTab("Test", 4483362458)
+
+Tab:CreateButton({
+    Name = "UI Funcionando",
+    Callback = function()
+        Rayfield:Notify({
+            Title = "OK",
+            Content = "Delta executou a UI",
+            Duration = 5
+        })
+    end
+})        AutoSoulGuitar = false,
         
         -- Combat
         AutoClick = false,
