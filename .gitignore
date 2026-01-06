@@ -1,16 +1,30 @@
-# Logs
-*.log
 
-# Cache
-.cache/
-tmp/
-temp/
+### 📑 Modelo de .gitignore para Projetos Lua/Roblox
+```gitignore
+# Arquivos do Sistema Operacional
+.DS_Store           # macOS[citation:1]
+Thumbs.db           # Windows[citation:1]
+desktop.ini
 
-# Editor
-.vscode/
-.idea/
+# Arquivos de Backup e Temporários
+*~
+*.bak
+*.tmp
+*.temp
 *.swp
 
-# OS
-.DS_Store
-Thumbs.db
+# Diretórios de Output/Build (comuns em alguns projetos)
+/bin/
+/out/
+/target/
+
+# Arquivos de Log[citation:1]
+*.log
+
+# Arquivos de Configuração Pessoal de IDE/Editores
+/.vscode/           # VS Code (exceto configurações compartilháveis)
+/.idea/             # JetBrains IDEs
+*.sublime-*
+
+# Possíveis artefatos de Lua (se seu projeto compilar algo)
+*.luac
