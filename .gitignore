@@ -1,48 +1,16 @@
-####################################
-# Roblox Script Hub - Darkz Hub
-####################################
-
-# ===== Logs =====
+# Logs
 *.log
-logs/
-log/
 
-# ===== Temporários =====
-*.tmp
-*.temp
-*.bak
-*.old
-
-# ===== Cache =====
+# Cache
 .cache/
-cache/
 tmp/
 temp/
 
-# ===== Configurações locais =====
-config.json
-settings.json
-.env
-.env.local
-
-# ===== IDEs / Editores =====
+# Editor
 .vscode/
 .idea/
 *.swp
-*.swo
 
-# ===== Sistema Operacional =====
+# OS
 .DS_Store
-.DS_Store?
-._*
 Thumbs.db
-desktop.ini
-
-# ===== Node / Build (caso use ferramentas) =====
-node_modules/
-dist/
-build/
-
-# ===== NÃO IGNORAR ARQUIVOS IMPORTANTES =====
-!main.lua
-!README.md
