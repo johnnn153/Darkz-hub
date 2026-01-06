@@ -1,41 +1,33 @@
-# Compiled Lua sources
-luac.out
+# =========================
+# Roblox / Script Hub
+# =========================
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# Configurações locais
+config.json
+settings.json
+*.env
 
-# Precompiled Headers
-*.gch
-*.pch
+# Pastas de cache
+.cache/
+temp/
+tmp/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# IDEs / Editores
+.vscode/
+.idea/
+*.swp
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Sistema operacional
+.DS_Store
+Thumbs.db
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+# =========================
+# NÃO IGNORAR
+# =========================
+# main.lua
+# README.md
